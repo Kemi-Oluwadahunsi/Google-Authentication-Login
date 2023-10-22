@@ -1,7 +1,7 @@
 
 
 // Import the functions you need from the SDKs you need
-import { GoogleOAuthProvider } from "@react-oauth/google";
+// import { GoogleOAuthProvider } from "@react-oauth/google";
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider , signInWithPopup} from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use

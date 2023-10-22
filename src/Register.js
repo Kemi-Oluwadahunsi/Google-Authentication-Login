@@ -114,13 +114,13 @@ const SignUp = () => {
                     </div>
 
                     <p  id="uidnote" className={userFocus && user && !validName ? "instructions" : "offscreen"}>
-                        <div className="text-gray-300 text-xs">
-                            <FontAwesomeIcon className="ml-2" icon={faInfoCircle} />
-                            <span className="ml-1">
+                       
+                            <FontAwesomeIcon className="ml-2 text-gray-300 text-xs" icon={faInfoCircle} />
+                            <span className="ml-1 text-gray-300 text-xs">
                                 4 to 24 characters.<br />
                                 Letters, numbers, underscores, hyphens allowed.
                             </span>
-                        </div>
+                
                     </p>
 
                     <div className="flex flex-col text-gray-300 py-2">
@@ -152,16 +152,13 @@ const SignUp = () => {
                     </div>
                     <p id="pwdnote" className={pwdFocus && !validPwd ? "instructions" : "offscreen"}>
 
-                        <div className="text-gray-300 text-xs">
-
-                            <FontAwesomeIcon icon={faInfoCircle} />
-                            <span className="ml-1">
+                            <FontAwesomeIcon className="text-gray-300 text-xs ml-2" icon={faInfoCircle} />
+                            <span className="ml-1 text-gray-300 text-xs">
                                 8 to 24 characters. <br />
                                 Must include uppercase and lowercase letters, a number and a special character. <br />
                                 Allowed special characters: <span aria-label="exclamation mark">!</span>
                                 <span aria-label="at symbol">@</span> <span aria-label="hashtag">#</span> <span aria-label="dollar sign">$</span> <span aria-label="percent">%</span>
                             </span>
-                        </div>
                     </p>
 
                     <div className="flex flex-col text-gray-300 py-2">
@@ -192,10 +189,8 @@ const SignUp = () => {
                     </div>
 
                     <p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
-                        <div className="text-gray-300 text-xs">
-                            <FontAwesomeIcon icon={faInfoCircle} />
+                            <FontAwesomeIcon className="text-gray-300 text-xs" icon={faInfoCircle} />
                             <span className="ml-1"> Must match the first password input field.</span>
-                        </div>
                     </p>
 
                     <button className="w-full my-5 py-2 cursor-pointer bg-teal-500 shadow-lg shadow-teal-500/50 hover:shadow-teal-500/40 text-white font-semibold rounded-lg" disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>

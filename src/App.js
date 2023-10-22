@@ -13,7 +13,7 @@ function App() {
     <main className=' h-screen w-screen back'>
   
       <Routes>
-        <Route path="/Login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Homepage />} />
         <Route path="/register" element={<Register />} />
       </Routes>  
