@@ -71,10 +71,8 @@ const SignUp = () => {
 
                 {success ? (
                     <section>
-                        <h1>Success!</h1>
-                        <p>
-                            Sign In
-                        </p>
+                        <h1 className="text-white text-4xl ">Success!</h1>
+                        <span className="text-white text-4xl mt-10"><Link to = "/login" >Sign In</Link></span>
                     </section>
             ) : (
 
